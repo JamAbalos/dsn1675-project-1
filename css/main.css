@@ -74,9 +74,49 @@ a {
 }
 
 footer p {
-	font-size: 0.5em;
 	margin-top: 2rem;
 	text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+		html {
+		font-size: 110%;
+		line-height: 1.4;
+	}
+
+	.banner-content {
+		bottom: -12.5rem;
+		position: absolute;
+		width: 100%;
+		padding: 5rem;
+		background-color: transparent;
+	}
+
+	.social img {
+		width: 60px;
+	}
+}
+
+@media only screen and (min-width: 60em) {
+
+	html {
+		font-size: 120%;
+		line-height: 1.5;
+	}
+
+	.banner-content {
+		bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.social img {
+		width: 70px;
+	}
+
+	footer {
+		margin-top: 0;
+	}
 }
 
 }
