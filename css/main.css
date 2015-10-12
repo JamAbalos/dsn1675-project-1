@@ -122,12 +122,13 @@ footer p {
 }
 
 @media print {
-	nav {
-		display: none;
+	body {
+		width: 3.5in;
+		height: 2in;
 	}
 
-	main a::after {
+	a::after {
 		content: " ("attr(href)")";
-		color: #525564;
+		color: #000;
 	}
 }
