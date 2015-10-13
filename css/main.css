@@ -129,8 +129,48 @@ footer p {
 
 @media print {
 
+	html {
+		font-size: 50%;
+		line-height: 1;
+	}
+
+	.banner {
+		display: block;
+		width: 3.5in;
+		height: 2in;
+		margin: 0 auto;
+		margin-top: 15rem;
+		border-style: solid;
+	}
+
+	.banner-content {
+		bottom: 0;
+		padding-bottom: 0;
+	}
+
+	img {
+		float: left;
+		width: 45%;
+		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	li {
+		float: left;
+		display: block;
+		margin: 0;
+	}
+
+	.social img {
+		width: 20px;
+	}
+
 	a::after {
 		content: " (" attr(href) ")";
 		color: #000;
+	}
+
+	footer {
+		display: none;
 	}
 }
