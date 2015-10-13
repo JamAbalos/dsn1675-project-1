@@ -132,7 +132,7 @@ footer p {
 @media print {
 
 	a::after {
-		content: " ("attr( href )")";
+		content: " (" attr(href) ")";
 		color: #000;
 	}
 }
